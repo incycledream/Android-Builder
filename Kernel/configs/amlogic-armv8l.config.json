@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "Amlogic 5.4",
-      "repo": "https://github.com/Diva-Room/Miku_kernel_xiaomi_wayne",
+      "repo": "https://github.com/LineageOS/android_kernel_amlogic_linux-5.4",
       "branch": "lineage-19.1",
       "device": "amlogic",
       "defconfig": "arm/configs/meson64_a32_defconfig"
