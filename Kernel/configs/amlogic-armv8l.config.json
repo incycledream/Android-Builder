@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "Amlogic 5.4",
+      "name": "Amlogic",
       "repo": "https://github.com/LineageOS/android_kernel_amlogic_linux-5.4",
       "branch": "lineage-19.1",
       "device": "amlogic",
