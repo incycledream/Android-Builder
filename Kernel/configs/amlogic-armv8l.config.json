@@ -1,0 +1,57 @@
+[
+  {
+    "kernelSource": {
+      "name": "Amlogic 5.4",
+      "repo": "https://github.com/Diva-Room/Miku_kernel_xiaomi_wayne",
+      "branch": "lineage-19.1",
+      "device": "amlogic",
+      "defconfig": "arm/configs/meson64_a32_defconfig"
+    },
+    "toolchains": [
+      {
+        "repo": "https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b",
+        "branch": "lineage-20.0",
+        "name": "clang",
+        "binaryEnv": [
+          "bin"
+        ]
+      },
+      {
+        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9",
+        "branch": "lineage-19.1",
+        "name": "arm",
+        "binaryEnv": [
+          "bin"
+        ]
+      }
+    ],
+    "enableCcache": true,
+    "params": {
+      "ARCH": "arm",
+      "CC": "clang",
+      "externalCommands": {
+        "CLANG_TRIPLE": "arm-linux-gnueabi-",
+        "CROSS_COMPILE": "arm-linux-androideabi-",
+        "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
+        "LD": "ld.lld",
+        "AR": "llvm-ar",
+        "NM": "llvm-nm",
+        "OBJCOPY": "llvm-objcopy",
+        "OBJDUMP": "llvm-objdump",
+        "READELF": "llvm-readelf",
+        "OBJSIZE": "llvm-size",
+        "STRIP": "llvm-strip",
+        "LDGOLD": "arm-linux-gnueabi-ld.gold",
+        "LLVM_AR": "llvm-ar",
+        "LLVM_DIS": "llvm-dis",
+        "CONFIG_THINLTO": ""
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true
+    },
+    "enableKernelSU": false,
+    "enableLXC": false
+  }
+]
